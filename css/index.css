@@ -15,7 +15,20 @@ p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
-  padding-left: 30px; }
+  padding-left: 30px;
+  position: relative; }
+  .btn-readMore span {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 42%;
+    right: 20px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    transition: all 0.5s; }
+  .btn-readMore:hover span {
+    transform: translateX(10px) rotate(45deg); }
 
 .block-text {
   display: flex;
@@ -223,7 +236,7 @@ p {
     color: white; }
 
 #backTop {
-  z-index: 999;
+  z-index: 888;
   cursor: pointer;
   position: fixed;
   padding-top: 5px;
@@ -272,7 +285,7 @@ p {
       height: 0;
       transition: all 0.5s;
       overflow: hidden;
-      z-index: 888;
+      z-index: 900;
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -280,6 +293,8 @@ p {
         display: block; }
         .header .head-nav ul li {
           display: block; }
+          .header .head-nav ul li a {
+            padding: 15px 33px; }
     .header .head-nav.active {
       height: 100vh; }
     .header .header-md-content {
@@ -339,7 +354,8 @@ p {
   .history .block-history .text {
     padding: 20px; }
   .recruitment .recruit-content {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-bottom: 100px; }
     .recruitment .recruit-content .block-img {
       margin: auto;
       transform: translate(0); }
@@ -365,5 +381,7 @@ p {
       width: 15px; }
     .header .scroll span {
       font-size: 1.2rem; }
+  .footer-content {
+    flex-wrap: wrap; }
   .recruitment .recruit-content .block .text .btn-readMore {
     margin: auto; } }
